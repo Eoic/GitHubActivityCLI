@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-activity"
+version = "0.0.1"
+authors = [
+  { name="Karolis Strazdas", email="karolis.strazdas@protonmail.com" },
+]
+description = "A simple CLI-based tool for viewing GitHub user's activity."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Eoic/GitHubActivityCLI"
+Issues = "https://github.com/Eoic/GitHubActivityCLI/issues"
+
+[project.scripts]
+github-activity = "github_activity.github_activity:main"
